@@ -30,7 +30,7 @@ app.use(expressWinston.logger({
     transports:[
         new (winston.transports.File)({
             filename:__dirname + '/logs/log.log',
-            maxsize:1024,
+            maxsize:102400,
             maxFiles:10
         })
     ]

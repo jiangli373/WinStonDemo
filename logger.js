@@ -11,8 +11,8 @@ var winston = require('winston');
 var logger = new (winston.Logger)({
     transports: [
         new (winston.transports.File)({
-            filename: __dirname+'/logs/log.log',
-            maxsize:1024,
+            filename: __dirname+'/logs/detaillog.log',
+            maxsize:102400,
             maxFiles:10
         })
     ],
